@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useState, useEffect, useCallback } from "react";
 const { items }  = require("./items");
 
-const Shop = ({cart, setCart}) => {
+const Shop = () => {
 
     useEffect(()=>{
         // Add hover listeners to all images in the shop
@@ -24,10 +24,7 @@ const Shop = ({cart, setCart}) => {
                     <div>{item.itemName}</div>
                     <div>{item.price}</div>
                 </Link>)
-                
-                
             })}
-
         </div>
     );
 };
