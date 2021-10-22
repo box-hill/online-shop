@@ -11,7 +11,8 @@ import './App.css';
 
 const App = () => {
 
-  const [cart, setCart] = useState([{id: '1', quantity: 3}, {id: '3', quantity: 2}]);
+  //const [cart, setCart] = useState([{id: '1', quantity: 3}, {id: '3', quantity: 2}]);
+  const [cart, setCart] = useState([]);
 
   return (
     <BrowserRouter>
@@ -20,7 +21,7 @@ const App = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/shop" component={() => <Shop/>} />
         <Route path="/shop/:id" component={(props) => <ItemDetail {...props} cart={cart} setCart={setCart} />} />
-        <Route exact path="/cart" component={() => <Cart cart={cart} setCart={setCart}/>} />
+        <Route exact path="/cart" component={() => <Cart cart={cart} setCart={setCart} />} />
       </Switch>
       <Footer/>
     </BrowserRouter>
