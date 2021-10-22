@@ -39,7 +39,7 @@ nav, .nav-links {
   height: 100%;
   font-size: 20px;
   line-height: 40px;
-  transition: all 0.3s ease-out;
+  transition: all 0.35s ease-out;
 }
 
 .nav-links li:hover {
@@ -95,6 +95,6 @@ footer {
 }
 
 .catalog img:hover { 
-  transform: scale(1.1);
+  transform: scale(1.08);
   opacity: 0.8;
 }
